@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - WPlayer for Android</title>
+  <meta name="description" content="Official Privacy Policy for WPlayer (com.wplayer.app). Zero data collection, 100% offline local processing, zero analytics, zero ads.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#080C15">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <img src="assets/icon.png" alt="WPlayer Logo" class="brand-icon">
+        <span class="brand-title">WPlayer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#screenshots">Screenshots</a></li>
+        <li><a href="index.html#security">Private Vault</a></li>
+        <li><a href="privacy.html" class="active" style="color: var(--primary);">Privacy Policy</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Policy Section -->
+  <main style="padding-top: 40px;">
+    <section class="policy-section">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 860px; margin-bottom: 2rem;">
+          <div class="badge-wrapper" style="margin-bottom: 1rem;">
+            <span class="badge-dot"></span>
+            Official Compliance Document - Google Play Distribution
+          </div>
+          <h1 style="font-size: 2.75rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.75rem;">
+            Privacy Policy
+          </h1>
+          <p style="color: var(--text-muted); font-size: 1rem;">
+            Application: <strong>WPlayer - Media & Files</strong> (Package: <code>com.wplayer.app</code>)<br>
+            Effective Date: <strong>October 24, 2026</strong> &bull; Version 1.0.0
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <div class="policy-block">
+            <h3>Executive Summary</h3>
+            <p><strong>WPlayer is an entirely offline, privacy-first multimedia player and local storage management tool for Android.</strong> We do not collect, transmit, store, sell, or share any personal information, media content, usage logs, device identifiers, or analytics whatsoever. All operations take place strictly on your device.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>1. Zero Data Collection & Zero Telemetry</h3>
+            <p>WPlayer operates with no backend servers, no analytics SDKs (no Firebase, no Crashlytics, no Google Analytics), and zero advertising frameworks. The application does not contain code to track user identity, device location, hardware IDs, browsing habits, or playback history.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>2. Android Permissions & How They Are Used</h3>
+            <p>WPlayer adheres strictly to Google Play developer policies and the principle of least privilege. Permissions are never requested until the user navigates to a feature that requires them.</p>
+
+            <div class="perm-table-wrapper">
+              <table class="perm-table">
+                <thead>
+                  <tr>
+                    <th>Permission</th>
+                    <th>Purpose</th>
+                    <th>Required / Optional</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>READ_MEDIA_VIDEO</code></td>
+                    <td>Enables indexing and playback of local video files. Requested only when opening the Videos tab.</td>
+                    <td><span class="badge-optional">Feature-gated</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>READ_MEDIA_IMAGES</code></td>
+                    <td>Enables browsing and editing of local photos. Requested only when opening the Photos tab.</td>
+                    <td><span class="badge-optional">Feature-gated</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>READ_MEDIA_AUDIO</code></td>
+                    <td>Enables scanning and playback of local audio files. Requested only when opening the Audio tab.</td>
+                    <td><span class="badge-optional">Feature-gated</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>MANAGE_EXTERNAL_STORAGE</code></td>
+                    <td>Enables directory traversal, APK installation, archive extraction, and deep junk cleaning in the dedicated Files and Clean up tabs. The core media tabs remain fully functional even if this permission is permanently declined.</td>
+                    <td><span class="badge-optional">Optional (Files tab only)</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>POST_NOTIFICATIONS</code></td>
+                    <td>Enables media playback controls (play/pause/skip) in the Android notification shade and lock screen while playing in the background.</td>
+                    <td><span class="badge-optional">Optional</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
+                    <td>Ensures uninterrupted audio playback when the screen is turned off or when multitasking.</td>
+                    <td><span class="badge-core">System Core</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="policy-block">
+            <h3>3. Private Vault & Cryptographic Protection</h3>
+            <p>Files imported into the Private Vault are encrypted locally using industry-standard <strong>AES-256 (GCM mode)</strong> with a user-supplied PIN. Encryption keys are derived using PBKDF2 with a unique salt generated on-device. Neither the developer nor any third party can recover your encrypted files if you forget your PIN, as keys are never transmitted off the device.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>4. Storage Clean Up & Safety Guarantee</h3>
+            <p>The Clean up feature analyzes local storage caches, empty directories, duplicated files, and obsolete APKs:</p>
+            <ul style="padding-left: 1.25rem; margin-top: 0.5rem; color: var(--text-muted); line-height: 1.8;">
+              <li><strong>Zero automatic deletion:</strong> Scanning requires manual initiation via the "Scan" button.</li>
+              <li><strong>User-verified action:</strong> Files are never deleted without explicit confirmation by the user.</li>
+              <li><strong>Safe categories:</strong> Scans target temporary app caches and user-selected obsolete files only.</li>
+            </ul>
+          </div>
+
+          <div class="policy-block">
+            <h3>5. Third-Party Libraries & Dependencies</h3>
+            <p>WPlayer is built using open-source, official Android Jetpack and Media3 libraries. No third-party network, advertising, tracking, or telemetry libraries are bundled into the release APK.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>6. Children's Privacy</h3>
+            <p>WPlayer is not directed at children under the age of 13 and collects zero personal data from any person of any age.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>7. Updates to this Policy</h3>
+            <p>Any revisions to this privacy policy will be posted on this page with an updated effective date. Users are encouraged to review this page periodically.</p>
+          </div>
+
+          <div class="policy-block">
+            <h3>8. Developer Contact & Support</h3>
+            <p>If you have any questions or security inquiries regarding WPlayer, please open an issue on the public project repository:</p>
+            <p style="margin-top: 0.5rem;">
+              <a href="https://github.com/walikhan226/wplayer-privacy/issues" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600; text-decoration: underline;">
+                https://github.com/walikhan226/wplayer-privacy/issues
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="brand">
+          <img src="assets/icon.png" alt="WPlayer" class="brand-icon" style="width: 32px; height: 32px;">
+          <span class="brand-title" style="font-size: 1.15rem;">WPlayer</span>
+        </a>
+        <div class="footer-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#screenshots">Screenshots</a>
+          <a href="index.html#security">Vault</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="https://github.com/walikhan226/wplayer-privacy" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 WPlayer. Distributed via Google Play.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

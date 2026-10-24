@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPlayer — Private Offline Media Player & Local File Manager for Android</title>
+  <meta name="description" content="Fast, elegant, and 100% offline multimedia player and local file manager for Android. Stutter-free 4K video, lossless audio, photo editing, and AES-256 encrypted private vault.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#080C15">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <img src="assets/icon.png" alt="WPlayer Logo" class="brand-icon">
+        <span class="brand-title">WPlayer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#security">Private Vault</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#privacy-policy" class="btn btn-secondary">Privacy</a>
+        <a href="https://github.com/walikhan226/wplayer-privacy" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge-wrapper">
+        <span class="badge-dot"></span>
+        100% Offline • Zero Trackers • Zero Ads • Hardware Accelerated
+      </div>
+      <h1 class="hero-title">
+        The Media Player & File Manager That <span>Respects Your Privacy</span>.
+      </h1>
+      <p class="hero-subtitle">
+        Enjoy smooth 4K video playback with automatic hardware/software decoder fallback, lossless music listening, responsive photo galleries, and deep local file management — fully offline.
+      </p>
+      <div class="hero-actions">
+        <a href="#features" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Explore Features
+        </a>
+        <a href="#privacy-policy" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Read Privacy Policy
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="assets/feature-graphic.png" alt="WPlayer Feature Graphic" class="hero-img">
+          <div class="floating-pill pill-1">
+            <span style="color: var(--primary)">⚡</span> Hardware Decoding + SW Fallback
+          </div>
+          <div class="floating-pill pill-2">
+            <span style="color: var(--accent-cyan)">🔒</span> AES-256 Encrypted Private Vault
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Designed for Performance</div>
+        <h2 class="section-title">Everything you need in a modern media player</h2>
+        <p class="section-desc">Engineered in Kotlin and Jetpack Compose with strict adherence to Google Play policies and Scoped Storage standards.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🎬</div>
+          <h3>HD & 4K Video Player</h3>
+          <p>Hardware-accelerated playback with seamless automatic software decoding fallback. Folder playlists, seek bar with live drag preview, speed controls (0.5x–2.0x), subtitles (.srt, .vtt), and gesture controls.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box" style="background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.25); color: var(--accent-cyan)">🎵</div>
+          <h3>Hi-Res Music Player</h3>
+          <p>Plays MP3, FLAC, WAV, M4A, AAC, and OGG with automatic audio focus handling. Automatically pauses on headphone disconnect and streams continuous folder queues in the background.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box" style="background: rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.25); color: var(--accent-purple)">🖼️</div>
+          <h3>Photos & Image Editor</h3>
+          <p>Fast-scrolling galleries that load 6,000+ photos instantly. Smooth pinch-to-zoom (1x–5x), 90° rotation, aspect crop presets (Free, 1:1, 4:3, 16:9), and safe non-destructive saving.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.25); color: var(--accent-emerald)">📁</div>
+          <h3>Complete File Manager</h3>
+          <p>Full storage browser for internal storage and SD cards with directory breadcrumbs. Browse, copy, move, rename, delete, batch multi-select, and filter documents (PDF, Word, Excel, PowerPoint).</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🔒</div>
+          <h3>AES-256 Private Vault</h3>
+          <p>Hide sensitive files or whole folders behind a 4-digit PIN and recovery question. Vault files are encrypted using hardware Android Keystore keys and excluded from cloud backups.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.25); color: #F87171">🧹</div>
+          <h3>Storage Clean Up & Recovery</h3>
+          <p>Identify large files, duplicate copies, old downloads, and empty folders to free space. Deep-scan storage for recoverable deleted files in trash, caches, or disguised file extensions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Showcase -->
+  <section class="section" id="screenshots" style="background: rgba(0, 0, 0, 0.2)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interface & Design</div>
+        <h2 class="section-title">Clean, Dark, Distraction-Free</h2>
+        <p class="section-desc">Crafted with modern Material Design principles, curated amber accents, and responsive edge-to-edge layouts.</p>
+      </div>
+
+      <div class="screenshot-tabs" id="tabBar">
+        <button class="tab-btn active" onclick="switchScreenshot(0)">Video Library</button>
+        <button class="tab-btn" onclick="switchScreenshot(1)">Video Player</button>
+        <button class="tab-btn" onclick="switchScreenshot(2)">Photo Gallery</button>
+        <button class="tab-btn" onclick="switchScreenshot(3)">File Explorer</button>
+        <button class="tab-btn" onclick="switchScreenshot(4)">Storage Cleaner</button>
+      </div>
+
+      <div class="gallery-stage">
+        <div class="phone-mockup">
+          <img id="activeScreenshot" src="assets/screens/01_videos_library.png" alt="WPlayer Screen">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Comparison -->
+  <section class="section" id="security">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Privacy By Design</div>
+        <h2 class="section-title">Why WPlayer is Truly Private</h2>
+        <p class="section-desc">Unlike ad-supported players that upload telemetry, WPlayer functions entirely offline.</p>
+      </div>
+
+      <div class="comparison-container">
+        <div class="comp-box comp-bad">
+          <span class="comp-badge">Typical Media Apps</span>
+          <ul class="comp-list">
+            <li><span>❌</span> Requires <code>INTERNET</code> permission to track behavior.</li>
+            <li><span>❌</span> Embedded third-party ad networks and analytics SDKs.</li>
+            <li><span>❌</span> Gated behind mandatory user accounts and logins.</li>
+            <li><span>❌</span> Uploads viewing telemetry, file names, or metadata to servers.</li>
+            <li><span>❌</span> Locks core features behind recurring cloud subscriptions.</li>
+          </ul>
+        </div>
+
+        <div class="comp-box comp-good">
+          <span class="comp-badge">WPlayer Guarantee</span>
+          <ul class="comp-list">
+            <li><span>✅</span> <strong>No INTERNET permission:</strong> The app physically cannot send data.</li>
+            <li><span>✅</span> <strong>Zero SDK trackers:</strong> Zero ads, zero telemetry, zero analytics.</li>
+            <li><span>✅</span> <strong>No account needed:</strong> Instant access to all features immediately.</li>
+            <li><span>✅</span> <strong>100% on-device:</strong> Your videos, photos, and music never leave your device.</li>
+            <li><span>✅</span> <strong>Hardware Keystore Vault:</strong> Local AES-256 encryption protected by your PIN.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Privacy Policy Section -->
+  <section class="section" id="privacy-policy">
+    <div class="container">
+      <div class="privacy-wrapper">
+        <div class="privacy-header">
+          <div class="section-tag">Official Policy</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 8px;">WPlayer Privacy Policy</h2>
+          <div class="privacy-meta">
+            <span>📅 Effective date: 25 October 2026</span>
+            <span>•</span>
+            <span>Package: <code>com.wplayer.app</code></span>
+            <span>•</span>
+            <span>Target: Android 8.0 - 15</span>
+          </div>
+        </div>
+
+        <div class="policy-block">
+          <h3>Summary</h3>
+          <p>WPlayer is a file manager, media player, and image viewer for Android. This policy explains what the app does with your information.</p>
+          <div class="callout-box">
+            <strong>Key Guarantee:</strong> WPlayer does not collect, store on any server, share, or sell any personal data. The app has no internet permission, no user accounts, no ads, no analytics, and no tracking. Everything it does happens strictly on your local device.
+          </div>
+        </div>
+
+        <div class="policy-block">
+          <h3>What the App Accesses on Your Device</h3>
+          <p>To function, WPlayer reads files stored on your local device:</p>
+          <ul>
+            <li><strong>Photos, videos and audio:</strong> (Android <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_AUDIO</code>): Used to display your media folders, stream video, play audio tracks, and display photos in the gallery.</li>
+            <li><strong>All files access:</strong> (Optional Android <code>MANAGE_EXTERNAL_STORAGE</code>): Only requested when explicitly opened from the Files tab after an in-app explanation. Used to browse arbitrary non-media directories, open office documents, perform storage cleanup (large, old, duplicate files, APKs, empty folders), and recover deleted files. The media tabs remain fully functional without this permission.</li>
+          </ul>
+          <p>These files are processed on your device only. They are never uploaded or transmitted over any network.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>What the App Stores on Your Device</h3>
+          <ul>
+            <li><strong>Settings and playback history:</strong> User preferences, playback resume positions (timestamps), watched indicators, and recently opened file references are stored exclusively in the app's private sandbox storage on your device.</li>
+            <li><strong>Private Vault:</strong> Files and folders moved into the vault are encrypted with <strong>AES-256-GCM</strong> using cryptographic keys generated and stored in your device's hardware Android Keystore, protected by your custom 4-digit PIN. Vault contents and cryptographic keys are explicitly excluded from Android auto-backup and device migration, ensuring they never leave your device.</li>
+          </ul>
+        </div>
+
+        <div class="policy-block">
+          <h3>Changes to Files</h3>
+          <p>WPlayer only deletes, renames, moves, or edits files when explicitly requested by you. Android system confirmation prompts are triggered for all operations that require explicit user approval under Scoped Storage standards.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Children's Privacy</h3>
+          <p>WPlayer is not directed at children under the age of 13 and does not collect any personal information from any user.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Changes to this Policy</h3>
+          <p>If this policy changes, updated revisions will be posted directly on this page with an updated effective date.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Contact & Inquiries</h3>
+          <p>If you have any questions or feedback regarding this privacy policy or WPlayer's security architecture, you may open an issue on the public GitHub repository:</p>
+          <p><a href="https://github.com/walikhan226/wplayer-privacy/issues" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600; text-decoration: underline;">https://github.com/walikhan226/wplayer-privacy/issues</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="brand">
+          <img src="assets/icon.png" alt="WPlayer" class="brand-icon" style="width: 32px; height: 32px;">
+          <span class="brand-title" style="font-size: 1.15rem;">WPlayer</span>
+        </a>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#security">Vault</a>
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="https://github.com/walikhan226/wplayer-privacy" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 WPlayer. Designed for Android. Distributed via Google Play.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const screens = [
+      'assets/screens/01_videos_library.png',
+      'assets/screens/02_video_player.png',
+      'assets/screens/03_photos_gallery.png',
+      'assets/screens/04_file_manager.png',
+      'assets/screens/05_storage_cleanup.png'
+    ];
+
+    function switchScreenshot(index) {
+      const img = document.getElementById('activeScreenshot');
+      const tabs = document.querySelectorAll('.tab-btn');
+      
+      tabs.forEach((tab, i) => {
+        if (i === index) tab.classList.add('active');
+        else tab.classList.remove('active');
+      });
+
+      img.style.opacity = '0';
+      img.style.transform = 'scale(0.96)';
+      
+      setTimeout(() => {
+        img.src = screens[index];
+        img.style.opacity = '1';
+        img.style.transform = 'scale(1)';
+      }, 150);
+    }
+  </script>
+</body>
+</html>
